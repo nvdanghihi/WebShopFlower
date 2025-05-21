@@ -1,967 +1,984 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bee Shop Flower</title>
-    <link rel="stylesheet" href="flower.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="flower.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div class="header-left">
-                <div class="login">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                <p>Login/Logout</p>
+      <div class="header">
+        <div class="header-left">
+          <div class="login">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <p>Login/Logout</p>
+          </div>
+          <div class="setting">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <p>Setting</p>
+          </div>
+        </div>
+        <div class="text">
+          <h1>BEE SHOP FLOWERS</h1>
+        </div>
+        <div class="header-right">
+          <div class="search">
+            <input type="text" name="searchflower" placeholder="Tìm kiếm" />
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <i class="fa fa-shopping-cart icon_shop" aria-hidden="true"></i>
+        </div>
+      </div>
+      
+  </div>
+      <div class="nav">
+        <div class="nav_left">
+          <div class="flower" onclick="showTab('flower')">
+            <img src="images/pinkflower.png" alt="" />
+            <p class="animate__animated animate__headShake animate__infinite">
+              Flower
+            </p>
+          </div>
+
+          <div class="support" onclick="showTab('support')">
+            <img src="images/supportps.png" alt="" />
+            <p class="animate__animated animate__headShake animate__infinite">
+              Support
+            </p>
+          </div>
+
+          <div class="blog" onclick="showTab('blog')">
+            <img src="images/blog.png" alt="" />
+            <p class="animate__animated animate__headShake animate__infinite">
+              Blog
+            </p>
+          </div>
+        </div>
+        <div class="nav_main">
+          <img src="images/logoflower.jpg" alt="" />
+        </div>
+        <div class="nav_right">
+          <div class="about" onclick="showTab('about')">
+            <img src="images/bee.png" alt="" />
+            <p class="animate__animated animate__headShake animate__infinite">
+              About us
+            </p>
+          </div>
+          <div class="contact" onclick="showTab('contact')">
+            <img src="images/about.png" alt="" />
+            <p class="animate__animated animate__headShake animate__infinite">
+              Contact
+            </p>
+          </div>
+
+          <div class="question" onclick="showTab('question')">
+            <img src="images/ques.png" alt="" />
+            <p class="animate__animated animate__headShake animate__infinite">
+              Question
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      <div class="section">
+        <div class="img-title">
+          <img src="images/imagetitlee.jpg" alt="" />
+        </div>
+        <div class="sale-off">
+          <p>Sale Off</p>
+          <div class="animate__animated animate__bounce animate__infinite">
+            40%
+          </div>
+          <input type="submit" value="BUY NOW" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">
+          <p class="title-left">MOST POPULAR</p>
+          <p class="title-right">NEW ARRIVAL</p>
+        </div>
+        <div class="article">
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower1.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $290.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$380.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Sweet Pink Charm</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
-                <div class="setting">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <p>Setting</p>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
                 </div>
-                
-            </div>
-            <div class="text">
-                <h1>BEE SHOP FLOWERS</h1>
-            </div>
-            <div class="header-right">
-                <div class="search">
-                    <input type="text" name="searchflower" placeholder="Tìm kiếm">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
                 </div>
-                <i class="fa fa-shopping-cart icon_shop" aria-hidden="true"></i>
+              </div>
             </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower2.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $150.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$240.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Elegant Pastels</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower3.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $200.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$320.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Garden in Glass</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower4.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $280.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$350.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Pink Sunshine</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="nav">
-            <div class="nav_left">
-                <div class="flower">
-                    <img src="images/pinkflower.png" alt="">
-                    <p class="animate__animated
-                        animate__headShake
-                        animate__infinite">Flower</p>
+        <div class="article">
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower5.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $200.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Spring Blossoms</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
-                
-                <div class="support">
-                    <img src="images/supportps.png" alt="">
-                    <p class="animate__animated
-                        animate__headShake
-                        animate__infinite">Support</p>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
                 </div>
-                
-                <div class="blog">
-                    <img src="images/blog.png" alt="">
-                    <p class="animate__animated
-                        animate__headShake
-                        animate__infinite">Blog</p>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
                 </div>
-                
+              </div>
             </div>
-            <div class="nav_main">
-                <img src="images/logoflower.jpg" alt="">
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower6.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $270.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Enchanted Blue</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
             </div>
-            <div class="nav_right">
-                <div class="about">
-                    <img src="images/bee.png" alt="">
-                    <p class="animate__animated
-                        animate__headShake
-                        animate__infinite">About us</p>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower7.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $350.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$500.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Lavender Delight</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
-                
-                <div class="contact">
-                    <img src="images/about.png" alt="">
-                    <p class="animate__animated
-                        animate__headShake
-                        animate__infinite">Contact</p>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
                 </div>
-                
-                <div class="question">
-                    <img src="images/ques.png" alt="">
-                    <p class="animate__animated
-                        animate__headShake
-                        animate__infinite">Question</p>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower8.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $250.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Ocean Breeze</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="section">
-            <div class="img-title">
-                <img src="images/imagetitlee.jpg" alt="">
+        <div class="article">
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower13.png" alt="" />
+              <img class="item-sale" src="images/iconnew.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $180.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Spring Meadow</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
             </div>
-            <div class="sale-off">
-                <p>Sale Off</p>
-                <div class="animate__animated
-                    animate__bounce
-                    animate__infinite">40%</div>
-                <input type="submit" value="BUY NOW">
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower10.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $350.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$450.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Fluffy Friends</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="content">
-            <div class="title">
-                <p class="title-left">MOST POPULAR</p>
-                <p class="title-right">NEW ARRIVAL</p>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower11.png" alt="" />
+              <img class="item-sale" src="images/iconnew.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $220.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Pink Blossom</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
             </div>
-            <div class="article">
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower1.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$290.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$380.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Sweet Pink Charm</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower12.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $100.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Pastel Dreams</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower2.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$150.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$240.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Elegant Pastels</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
                 </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower3.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$200.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$320.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Garden in Glass</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
                 </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower4.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$280.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$350.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Pink Sunshine</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-
-            <div class="article">
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower5.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$200.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Spring Blossoms</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower6.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$270.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Enchanted Blue </div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower7.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$350.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$500.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Lavender Delight</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower8.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$250.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Ocean Breeze</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article">
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower13.png" alt="">
-                        <img class="item-sale" src="images/iconnew.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$180.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Spring Meadow</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower10.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$350.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$450.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Fluffy Friends</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower11.png" alt="">
-                        <img class="item-sale" src="images/iconnew.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$220.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Pink Blossom</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower12.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$100.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Pastel Dreams</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article">
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower14.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$200.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$400.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Sweet Elegance</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower15.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$250.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$300.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Green Whisper</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower16.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$180.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$240.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Garden Harmony</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower17.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$220.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$300.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Lavender Bliss</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article">
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower18.png" alt="">
-                        <img class="item-sale" src="images/iconnew.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$400.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Teddy Delight</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower19.png" alt="">
-                        <img class="item-sale" src="images/iconnew.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$400.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Angel Wings</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower20.png" alt="">
-                        <img class="item-sale" src="images/iconnew.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$600.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Elegance in a Box</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower21.png" alt="">
-                        <img class="item-sale" src="images/iconnew.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$350.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Pink Charm</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="article">
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower22.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$100.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Scarlet Passion</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower23.png" alt="">
-                        <img class="item-sale" src="images/iconsale.jpg" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$200.000</p>
-                             <span class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$350.000</span>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Blue Breeze</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower24.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$200.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Rose Garden</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-item">
-                        <img class="main-item" src="images/flower25.png" alt="">
-                        <div class="price" >
-                             <p class="animate__animated
-                             animate__fadeIn
-                             animate__infinite">$160.000</p>
-                        </div>
-                        <div class="describe">
-                            <div class="nameflower">Sky Blue Dreams</div>
-                            <div class="quality">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="choice">
-                            <div class="add">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Add
-                            </div>
-                            <div class="buy">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                Buy
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="aside">
-                <p id="aside-title">HOLIDAY</p>
-                <p id="aside-main">Gifts</p>
-                <p id="aside-des">"Gentle in every petal!!!"</p>
-            </div>
-            <div class="advers">
-                <div class="animate__animated
-                        animate__bounce
-                        animate__infinite advers-title">INSTAGRAM</div>
-                <div class="advers-content">
-                    <div class="box">
-                        <img src="images/feed1.png" alt="">
-                    </div>
-                    <div class="box">
-                        <img src="images/feed2.png" alt="">
-                    </div>
-                    <div class="box">
-                        <img src="images/feed3.png" alt="">
-                    </div>
-                    <div class="box">
-                        <img src="images/feed4.png" alt="">
-                    </div>
-                    <div class="box">
-                        <img src="images/feed5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="footer-box">ABOUT
-                <div class="footer-infor">
-                    <p>About Us</p>
-                    <p>Shopping Guilde</p>
-                    <p>Delivery Information</p>
-                    <p>Parivacy Policy</p>
-                </div>
-                
-            </div>
-            <div class="footer-box">MY ACCOUNT
-                <div class="footer-infor">
-                    <p>My Account</p>
-                    <p>Order History</p>
-                    <p>Wish List</p>
-                    <p>News Letter</p>
-                    <p>Contact Us</p>
-                </div>
-                
-            </div>
-            <div class="footer-box">CATALOG
-                <div class="footer-infor">
-                    <p>New Arrival</p>
-                    <p>Best Seller</p>
-                    <p>This Week Out Life's</p>
-                    <p>Sale Off</p>
-                    <p>Popular</p>
-                </div>
-                
-            </div>
-            <div class="footer-box">NEWSLETTER
-                <div class="footer-infor">
-                    
-                    <div id="letter">
-                        <span>Customers please contact us...</span>
-                        <input type="text" placeholder="Enter your email....">
-                        <input type="submit" value="SUBCRIBE">
-                    </div>
-                    
-                </div>
-            </div>
+          </div>
         </div>
 
+        <div class="article">
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower14.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $200.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$400.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Sweet Elegance</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower15.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $250.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$300.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Green Whisper</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower16.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $180.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$240.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Garden Harmony</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower17.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $220.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$300.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Lavender Bliss</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article">
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower18.png" alt="" />
+              <img class="item-sale" src="images/iconnew.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $400.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Teddy Delight</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower19.png" alt="" />
+              <img class="item-sale" src="images/iconnew.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $400.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Angel Wings</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower20.png" alt="" />
+              <img class="item-sale" src="images/iconnew.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $600.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Elegance in a Box</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower21.png" alt="" />
+              <img class="item-sale" src="images/iconnew.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $350.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Pink Charm</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower22.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $100.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Scarlet Passion</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower23.png" alt="" />
+              <img class="item-sale" src="images/iconsale.jpg" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $200.000
+                </p>
+                <span
+                  class="animate__animated animate__fadeIn animate__infinite"
+                  >$350.000</span
+                >
+              </div>
+              <div class="describe">
+                <div class="nameflower">Blue Breeze</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower24.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $200.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Rose Garden</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-item">
+              <img class="main-item" src="images/flower25.png" alt="" />
+              <div class="price">
+                <p class="animate__animated animate__fadeIn animate__infinite">
+                  $160.000
+                </p>
+              </div>
+              <div class="describe">
+                <div class="nameflower">Sky Blue Dreams</div>
+                <div class="quality">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="choice">
+                <div class="add">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add
+                </div>
+                <div class="buy">
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                  Buy
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="aside">
+          <p id="aside-title">HOLIDAY</p>
+          <p id="aside-main">Gifts</p>
+          <p id="aside-des">"Gentle in every petal!!!"</p>
+        </div>
+        <div class="advers">
+          <div
+            class="animate__animated animate__bounce animate__infinite advers-title"
+          >
+            INSTAGRAM
+          </div>
+          <div class="advers-content">
+            <div class="box">
+              <img src="images/feed1.png" alt="" />
+            </div>
+            <div class="box">
+              <img src="images/feed2.png" alt="" />
+            </div>
+            <div class="box">
+              <img src="images/feed3.png" alt="" />
+            </div>
+            <div class="box">
+              <img src="images/feed4.png" alt="" />
+            </div>
+            <div class="box">
+              <img src="images/feed5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-box">
+          ABOUT
+          <div class="footer-infor">
+            <p>About Us</p>
+            <p>Shopping Guilde</p>
+            <p>Delivery Information</p>
+            <p>Parivacy Policy</p>
+          </div>
+        </div>
+        <div class="footer-box">
+          MY ACCOUNT
+          <div class="footer-infor">
+            <p>My Account</p>
+            <p>Order History</p>
+            <p>Wish List</p>
+            <p>News Letter</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+        <div class="footer-box">
+          CATALOG
+          <div class="footer-infor">
+            <p>New Arrival</p>
+            <p>Best Seller</p>
+            <p>This Week Out Life's</p>
+            <p>Sale Off</p>
+            <p>Popular</p>
+          </div>
+        </div>
+        <div class="footer-box">
+          NEWSLETTER
+          <div class="footer-infor">
+            <div id="letter">
+              <span>Customers please contact us...</span>
+              <input type="text" placeholder="Enter your email...." />
+              <input type="submit" value="SUBCRIBE" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-    <script src="flower.js"></script>
+  </body>
+  <script src="flower.js"></script>
 </html>
